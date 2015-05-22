@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>OpenIT @Spreadshirt</title>
+    <style>
+        #tablomat {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="tablomat">
+
+    </div>
+    <script type="text/javascript">
+        window.spreadshirtLoaded = [function(spreadshirt) {
+            // invoked when the spreadshirt library is loaded
+            spreadshirt.create("tablomat", {
+                target: document.getElementById("tablomat"),
+                shopId: 592380,
+                platform: "EU",
+                productId: "129574202"
+            });
+        }];
+    </script>
+    <script type="text/javascript" src="//spreadshirt.github.io/apps/spreadshirt.min.js"></script>
+</body>
+</html>
